@@ -20,11 +20,11 @@
 	  <h:form id="formAluno">	
 	  <p:panelGrid columns="2">
       <p:outputLabel value="#{msg['pages.cadastroProfessor.id']}" />
-      <p:inputText value="#{alunoManagedBean.professor.id}"/>
+      <p:inputText value="#{professorManagedBean.professor.id}"/>
 	  <p:outputLabel value="#{msg['pages.cadastroProfessor.nome']}" />
-      <p:inputText value="#{alunoManagedBean.professor.nome}"/>
+      <p:inputText value="#{professorManagedBean.professor.nome}"/>
       <p:outputLabel value="#{msg['pages.cadastroProfessor.curso']}" />
-      <p:inputText value="#{alunoManagedBean.professor.curso}"/>
+      <p:inputText value="#{professorManagedBean.professor.curso}"/>
 	  </p:panelGrid>
 	  <p:commandButton value="#{msg['pages.cadastroProfessor.btnSalvar']}" 
 	                 action="#{professorManagedBean.salvar}"
