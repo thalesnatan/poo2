@@ -21,21 +21,18 @@ public class AlunoService {
 	
 	public void salvar(Aluno aluno)
 	{
-	    
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();	
 			em.persist(aluno);
 		em.getTransaction().commit();	
 	    em.close();
-		
 	}
 	
 	
 	@SuppressWarnings("unchecked")
 	public List <Aluno> getAlunos()
 	{
-		
-		List <Aluno >alunos;
+		List <Aluno> alunos;
 		
 		EntityManager em = emf.createEntityManager();
 		Query q = em.createQuery("Select a From Aluno a");
@@ -43,8 +40,5 @@ public class AlunoService {
 		em.close();
 		
 		return alunos;
-		
 	}
-	
-	
 }
